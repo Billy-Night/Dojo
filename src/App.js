@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Paragraph from "./components/Paragraph";
+import "./App.css";
+
+let social = ["Facebook", "Instagram", "Twitter"];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>WCS React Page</h1>
+      <h4>Where magic coding happens</h4>
+      <Paragraph />
+      <Paragraph />
+      <button>Enter</button>
+      <button>Exit</button>
+      <Paragraph />
+      <footer>
+        <ul>
+          {/* {social.map(function (element) {
+            return <li>This is my social network: {element}</li>;
+          })} */}
+          {social.map((element) => (
+            <li>This is my social network: {element}</li>
+          ))}
+        </ul>
+      </footer>
+      <Paragraph />
     </div>
   );
 }
