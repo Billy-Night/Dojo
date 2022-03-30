@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Paragraph from "./components/Paragraph";
+import Welcome from "./components/Welcome";
 import "./App.css";
 
 let social = ["Facebook", "Instagram", "Twitter"];
@@ -7,7 +8,14 @@ let social = ["Facebook", "Instagram", "Twitter"];
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header
+        title="this is my title"
+        subtitle="some subtitle"
+        pizza="Pizza is great!"
+      />
+      <Header title="marc title" subtitle="marc subtitle" />
+      <Header title="extra stuff" subtitle="more extra subtitle" />
+      <Welcome />
       <Paragraph />
       <Paragraph />
       <button>Enter</button>

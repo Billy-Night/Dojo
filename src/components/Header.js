@@ -1,8 +1,12 @@
-const Header = () => (
-  <>
-    <h1>WCS React Page</h1>
-    <h4>Where magic coding happens</h4>
-  </>
-);
+const Header = function (props) {
+  console.log("do I get props?", props);
+  return (
+    <>
+      <h1>{props.title}</h1>
+      <h4>{props.subtitle}</h4>
+      {/* <p>{props.pizza}</p> */}
+    </>
+  );
+};
 
 export default Header;
