@@ -1,6 +1,6 @@
 function Paragraph() {
   return (
-    <div>
+    <section>
       <p>
         lorem akjsdn kja sdkjadkjn as dkjandlanklndlk ajksd
         akjsdnklandklandklnad
@@ -20,7 +20,7 @@ function Paragraph() {
         directly and I can make sure it gets covered. But if you feel like
         everything is getting covered then no worries :slightly_smiling_face:
       </p>
-    </div>
+    </section>
   );
 }
 
